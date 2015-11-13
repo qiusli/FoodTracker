@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var mealNamelabel: UILabel!
     @IBOutlet weak var mealNameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,10 +54,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     func textFieldDidEndEditing(textField: UITextField) {
         mealNamelabel.text = mealNameTextField.text
-    }
-    
-    @IBAction func setDefaultLabelText(sender: UIButton) {
-        mealNamelabel.text = "Default Text"
     }
 }
 
